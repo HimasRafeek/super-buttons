@@ -1,0 +1,257 @@
+/*
+
+  Name: Super Buttons Pack
+  Author: Himas Rafeek
+  Author URI: https://himasrafeek.com
+  Version: 1.0.0
+
+*/
+.btn {
+  font-family: 'roboto', sans-serif;
+  -webkit-transition: all 120ms;
+  -o-transition: all 120ms;
+  -moz-transition: all 120ms;
+  transition: all 120ms;
+  background: white;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 13px 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 400;
+  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.18);
+  margin: 5px 5px;
+  color: #009688;
+  border: 2px solid #009688; }
+  .btn:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn:active, .btn:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn .waving {
+    border-color: #999 !important; }
+
+.wave {
+  position: relative;
+  overflow: hidden; }
+
+.wave .waving {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0.5;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid lightgray;
+  -webkit-animation: wave 1s linear forwards;
+  -moz-animation: wave 1s linear forwards;
+  -o-animation: wave 1s linear forwards;
+  animation: wave 1s linear forwards;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: lightgray; }
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: scale(100);
+    transform: scale(100); } }
+
+@-moz-keyframes wave {
+  to {
+    -moz-transform: scale(100);
+    transform: scale(100); } }
+
+@-o-keyframes wave {
+  to {
+    -o-transform: scale(100);
+    transform: scale(100); } }
+
+@keyframes wave {
+  to {
+    -webkit-transform: scale(100);
+    -moz-transform: scale(100);
+    -o-transform: scale(100);
+    transform: scale(100); } }
+.btn.default {
+  color: white;
+  border: none;
+  background: #009688 !important;
+  border: none; }
+  .btn.default:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.default:active, .btn.default:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.default:focus, .btn.default:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.default .waving {
+    border-color: white !important; }
+
+.btn.primary {
+  color: white;
+  border: none;
+  background: #007bff !important;
+  border: none; }
+  .btn.primary:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.primary:active, .btn.primary:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.primary:focus, .btn.primary:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.primary .waving {
+    border-color: white !important; }
+
+.btn.success {
+  color: white;
+  border: none;
+  background: #00c851 !important;
+  border: none; }
+  .btn.success:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.success:active, .btn.success:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.success:focus, .btn.success:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.success .waving {
+    border-color: white !important; }
+
+.btn.info {
+  color: white;
+  border: none;
+  background: #33b5e5 !important;
+  border: none; }
+  .btn.info:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.info:active, .btn.info:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.info:focus, .btn.info:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.info .waving {
+    border-color: white !important; }
+
+.btn.warning {
+  color: white;
+  border: none;
+  background: #f80 !important;
+  border: none; }
+  .btn.warning:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.warning:active, .btn.warning:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.warning:focus, .btn.warning:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.warning .waving {
+    border-color: white !important; }
+
+.btn.danger {
+  color: white;
+  border: none;
+  background: #ff3547 !important;
+  border: none; }
+  .btn.danger:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.danger:active, .btn.danger:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.danger:focus, .btn.danger:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.danger .waving {
+    border-color: white !important; }
+
+.btn.purple {
+  color: white;
+  border: none;
+  background: #aa66cc !important;
+  border: none; }
+  .btn.purple:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.purple:active, .btn.purple:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.purple:focus, .btn.purple:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.purple .waving {
+    border-color: white !important; }
+
+.btn.blue {
+  color: white;
+  border: none;
+  background: #4285f4 !important;
+  border: none; }
+  .btn.blue:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35); }
+  .btn.blue:active, .btn.blue:focus {
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important; }
+  .btn.blue:focus, .btn.blue:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.blue .waving {
+    border-color: white !important; }
+
+/*# sourceMappingURL=style.css.map */

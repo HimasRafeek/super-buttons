@@ -1,0 +1,13 @@
+// Outlined
+@each $name, $color in $colors{
+	
+	.btn.#{$name}.outlined{
+		@include btn-color($color, $color, 2px solid $color);
+		background: white !important;		
+		
+		.waving{
+			border-color: gray !important;
+		}
+	}
+	
+}

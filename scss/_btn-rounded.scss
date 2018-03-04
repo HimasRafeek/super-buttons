@@ -1,0 +1,22 @@
+// default
+@each $name, $color in $colors{
+	
+	.btn.#{$name}.rounded{
+		@include btn-color($color, white, 2px solid $color);
+		background: $color !important;
+		border: none;
+		border-radius: 50px;		
+		&:focus,
+		&:active{
+			
+			box-shadow: none !important;
+		}
+		
+		.waving{
+			border-color: white !important;
+		}
+		
+	}
+	
+	
+}

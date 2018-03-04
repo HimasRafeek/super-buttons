@@ -1,0 +1,14 @@
+// Outlined Rounded
+@each $name, $color in $colors{
+	
+	.btn.#{$name}.outlined-rounded{
+		@include btn-color($color, $color, 2px solid $color);
+		background: white !important;
+		border-radius: 50px;
+		
+		.waving{
+			border-color: gray !important;
+		}
+	}
+		
+}

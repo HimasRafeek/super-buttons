@@ -1,0 +1,95 @@
+$default: #009688;
+$primary: #007bff;
+$success: #00c851;
+$info: #33b5e5;
+$warning: #f80;
+$danger: #ff3547;
+$purple: #aa66cc;
+$blue: #4285f4;
+
+$colors: (
+	'default': $default,
+	'primary': $primary,
+	'success': $success,
+	'info': $info,
+	'warning': $warning,
+	'danger': $danger,
+	'purple': $purple,
+	'blue': $blue
+);
+
+@mixin btn-color($color, $text_color, $border) {
+	color: $text_color;
+	border: $border;
+
+	&:hover {
+		box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.35);
+	}
+
+	&:active,
+	&:focus {
+		
+		box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.25), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+	}
+}
+
+
+
+
+
+	.btn {
+		font-family: 'roboto', sans-serif;
+		transition: all 120ms;
+		background: white;
+		border: none;
+		text-align: center;
+		font-size: 14px;
+		outline: none;
+		user-select: none;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+		padding: 13px 35px;
+		box-sizing: border-box;
+		font-weight: 400;
+		box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.18);
+		margin: 5px 5px;
+		@include btn-color($default,$default,2px solid $default);
+		.waving{
+			border-color: #999 !important;
+		}
+	}
+
+	
+	.wave {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.wave .waving {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		opacity: 0.5;
+		border-radius: 100%;
+		border: 2px solid lightgray;
+		animation: wave 1s linear forwards;
+		pointer-events: none;
+		user-select: none;
+		background: lightgray
+	}
+
+
+@keyframes wave {
+	
+	to {
+		
+		transform: scale(100);
+		
+	}
+}
+
+

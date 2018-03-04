@@ -1,0 +1,23 @@
+// default
+@each $name, $color in $colors{
+	
+	.btn.#{$name}{
+		@include btn-color($color, white, none);
+		background: $color !important;
+		border: none;
+		
+		&:focus,
+		&:active{
+			
+			box-shadow: none !important;
+		}
+		
+		.waving{
+			border-color: white !important;
+		}
+		
+	}
+	
+	
+}
+
